@@ -23,7 +23,7 @@
                                 <rect key="frame" x="87.5" y="158" width="239.5" height="36"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dUm-JS-YgR">
@@ -72,6 +72,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="createUserBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yf-ZM-IIf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -92,6 +95,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Employee List" id="BIB-Q2-91r"/>
+                    <connections>
+                        <outlet property="appTitleLbl" destination="QWb-ok-zeO" id="2wY-us-ypi"/>
+                        <outlet property="createAgeTxt" destination="anu-Np-STY" id="QSB-h3-aAy"/>
+                        <outlet property="createNameTxt" destination="5Av-Jm-hkP" id="K1f-bS-3Pn"/>
+                        <outlet property="createSalaryTxt" destination="FpZ-Ue-te1" id="WEg-DU-OOP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
