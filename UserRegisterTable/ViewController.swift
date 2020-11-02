@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - Button Actions
+    @IBAction func onButtonClicked(_sender: UIButton) {
+        print("here")
+    }
 
 }
 
