@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8455BB2A2550A7170020E6D6 /* extensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455BB292550A7170020E6D6 /* extensionController.swift */; };
+		84E3E75A2551F3C800296050 /* userListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E7592551F3C800296050 /* userListTableViewCell.swift */; };
+		84E3E75F2551F4CC00296050 /* userListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E75E2551F4CC00296050 /* userListViewController.swift */; };
+		84E3E7642551FAB100296050 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E7632551FAB100296050 /* MeViewController.swift */; };
+		84E3E7692551FB8900296050 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E7682551FB8900296050 /* DetailViewController.swift */; };
 		84E71B1A25509541003F09B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B1925509541003F09B7 /* AppDelegate.swift */; };
 		84E71B1C25509541003F09B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B1B25509541003F09B7 /* SceneDelegate.swift */; };
 		84E71B1E25509541003F09B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B1D25509541003F09B7 /* ViewController.swift */; };
@@ -37,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		8455BB292550A7170020E6D6 /* extensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionController.swift; sourceTree = "<group>"; };
+		84E3E7592551F3C800296050 /* userListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListTableViewCell.swift; sourceTree = "<group>"; };
+		84E3E75E2551F4CC00296050 /* userListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListViewController.swift; sourceTree = "<group>"; };
+		84E3E7632551FAB100296050 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		84E3E7682551FB8900296050 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		84E71B1625509541003F09B7 /* UserRegisterTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegisterTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E71B1925509541003F09B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E71B1B25509541003F09B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 				84E71B1D25509541003F09B7 /* ViewController.swift */,
 				8455BB292550A7170020E6D6 /* extensionController.swift */,
 				84E71B1F25509541003F09B7 /* Main.storyboard */,
+				84E3E7682551FB8900296050 /* DetailViewController.swift */,
+				84E3E7632551FAB100296050 /* MeViewController.swift */,
+				84E3E75E2551F4CC00296050 /* userListViewController.swift */,
+				84E3E7592551F3C800296050 /* userListTableViewCell.swift */,
 				84E71B2225509542003F09B7 /* Assets.xcassets */,
 				84E71B2425509542003F09B7 /* LaunchScreen.storyboard */,
 				84E71B2725509542003F09B7 /* Info.plist */,
@@ -262,9 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E71B1E25509541003F09B7 /* ViewController.swift in Sources */,
+				84E3E7642551FAB100296050 /* MeViewController.swift in Sources */,
 				8455BB2A2550A7170020E6D6 /* extensionController.swift in Sources */,
+				84E3E75A2551F3C800296050 /* userListTableViewCell.swift in Sources */,
+				84E3E75F2551F4CC00296050 /* userListViewController.swift in Sources */,
 				84E71B1A25509541003F09B7 /* AppDelegate.swift in Sources */,
 				84E71B1C25509541003F09B7 /* SceneDelegate.swift in Sources */,
+				84E3E7692551FB8900296050 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
