@@ -8,6 +8,14 @@
 import Foundation
 import UIKit
 
+struct Person {
+    var name: String
+    var id: String
+    var salary: String
+    var age: String
+    
+}
+
 extension UIFont {
 
     public enum OpenSansType: String {

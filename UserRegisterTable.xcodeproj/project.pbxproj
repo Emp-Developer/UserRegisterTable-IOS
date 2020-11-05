@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8455BB2A2550A7170020E6D6 /* extensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455BB292550A7170020E6D6 /* extensionController.swift */; };
+		8455E81825534441008D4349 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455E81725534441008D4349 /* MeViewController.swift */; };
 		84E3E75A2551F3C800296050 /* userListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E7592551F3C800296050 /* userListTableViewCell.swift */; };
 		84E3E75F2551F4CC00296050 /* userListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E75E2551F4CC00296050 /* userListViewController.swift */; };
-		84E3E7642551FAB100296050 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E7632551FAB100296050 /* MeViewController.swift */; };
 		84E3E7692551FB8900296050 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E7682551FB8900296050 /* DetailViewController.swift */; };
 		84E71B1A25509541003F09B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B1925509541003F09B7 /* AppDelegate.swift */; };
 		84E71B1C25509541003F09B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B1B25509541003F09B7 /* SceneDelegate.swift */; };
@@ -20,6 +20,9 @@
 		84E71B2625509542003F09B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E71B2425509542003F09B7 /* LaunchScreen.storyboard */; };
 		84E71B3125509542003F09B7 /* UserRegisterTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B3025509542003F09B7 /* UserRegisterTableTests.swift */; };
 		84E71B3C25509542003F09B7 /* UserRegisterTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E71B3B25509542003F09B7 /* UserRegisterTableUITests.swift */; };
+		8AD6ACDB032A42C8D26BDF23 /* Pods_UserRegisterTableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EC5FC62CA724CE098C0C1B /* Pods_UserRegisterTableTests.framework */; };
+		8B3622134E0A0195301878BC /* Pods_UserRegisterTable_UserRegisterTableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115118FE9BEAE8553EC0B92C /* Pods_UserRegisterTable_UserRegisterTableUITests.framework */; };
+		99E84F1122D36EC2C89C8B06 /* Pods_UserRegisterTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D933BEF08633F493973EACE1 /* Pods_UserRegisterTable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115118FE9BEAE8553EC0B92C /* Pods_UserRegisterTable_UserRegisterTableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserRegisterTable_UserRegisterTableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5732DEBA3A1EA922C902DEA2 /* Pods-UserRegisterTable-UserRegisterTableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegisterTable-UserRegisterTableUITests.debug.xcconfig"; path = "Target Support Files/Pods-UserRegisterTable-UserRegisterTableUITests/Pods-UserRegisterTable-UserRegisterTableUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EF6C2DB9F0D3ED45662C920 /* Pods-UserRegisterTableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegisterTableTests.debug.xcconfig"; path = "Target Support Files/Pods-UserRegisterTableTests/Pods-UserRegisterTableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E49CED73608674D02D28574 /* Pods-UserRegisterTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegisterTable.debug.xcconfig"; path = "Target Support Files/Pods-UserRegisterTable/Pods-UserRegisterTable.debug.xcconfig"; sourceTree = "<group>"; };
 		8455BB292550A7170020E6D6 /* extensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionController.swift; sourceTree = "<group>"; };
+		8455E81725534441008D4349 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		84E3E7592551F3C800296050 /* userListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListTableViewCell.swift; sourceTree = "<group>"; };
 		84E3E75E2551F4CC00296050 /* userListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListViewController.swift; sourceTree = "<group>"; };
-		84E3E7632551FAB100296050 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		84E3E7682551FB8900296050 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		84E71B1625509541003F09B7 /* UserRegisterTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegisterTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E71B1925509541003F09B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +66,11 @@
 		84E71B3725509542003F09B7 /* UserRegisterTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRegisterTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E71B3B25509542003F09B7 /* UserRegisterTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterTableUITests.swift; sourceTree = "<group>"; };
 		84E71B3D25509542003F09B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A58DD2B81868B085EE2AA6 /* Pods-UserRegisterTable-UserRegisterTableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegisterTable-UserRegisterTableUITests.release.xcconfig"; path = "Target Support Files/Pods-UserRegisterTable-UserRegisterTableUITests/Pods-UserRegisterTable-UserRegisterTableUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD55AB5EBCA1A873F3103EB1 /* Pods-UserRegisterTableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegisterTableTests.release.xcconfig"; path = "Target Support Files/Pods-UserRegisterTableTests/Pods-UserRegisterTableTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0EC5FC62CA724CE098C0C1B /* Pods_UserRegisterTableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserRegisterTableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D933BEF08633F493973EACE1 /* Pods_UserRegisterTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserRegisterTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0C7889E4DEF0A4C2B866B4 /* Pods-UserRegisterTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRegisterTable.release.xcconfig"; path = "Target Support Files/Pods-UserRegisterTable/Pods-UserRegisterTable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E84F1122D36EC2C89C8B06 /* Pods_UserRegisterTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD6ACDB032A42C8D26BDF23 /* Pods_UserRegisterTableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3622134E0A0195301878BC /* Pods_UserRegisterTable_UserRegisterTableUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67A5C99E372C1B0FD754334D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D933BEF08633F493973EACE1 /* Pods_UserRegisterTable.framework */,
+				115118FE9BEAE8553EC0B92C /* Pods_UserRegisterTable_UserRegisterTableUITests.framework */,
+				B0EC5FC62CA724CE098C0C1B /* Pods_UserRegisterTableTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84E71B0D25509541003F09B7 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +118,8 @@
 				84E71B2F25509542003F09B7 /* UserRegisterTableTests */,
 				84E71B3A25509542003F09B7 /* UserRegisterTableUITests */,
 				84E71B1725509541003F09B7 /* Products */,
+				C092AFEE75E11187DFA51F56 /* Pods */,
+				67A5C99E372C1B0FD754334D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,8 +141,8 @@
 				84E71B1D25509541003F09B7 /* ViewController.swift */,
 				8455BB292550A7170020E6D6 /* extensionController.swift */,
 				84E71B1F25509541003F09B7 /* Main.storyboard */,
+				8455E81725534441008D4349 /* MeViewController.swift */,
 				84E3E7682551FB8900296050 /* DetailViewController.swift */,
-				84E3E7632551FAB100296050 /* MeViewController.swift */,
 				84E3E75E2551F4CC00296050 /* userListViewController.swift */,
 				84E3E7592551F3C800296050 /* userListTableViewCell.swift */,
 				84E71B2225509542003F09B7 /* Assets.xcassets */,
@@ -143,6 +170,20 @@
 			path = UserRegisterTableUITests;
 			sourceTree = "<group>";
 		};
+		C092AFEE75E11187DFA51F56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E49CED73608674D02D28574 /* Pods-UserRegisterTable.debug.xcconfig */,
+				DA0C7889E4DEF0A4C2B866B4 /* Pods-UserRegisterTable.release.xcconfig */,
+				5732DEBA3A1EA922C902DEA2 /* Pods-UserRegisterTable-UserRegisterTableUITests.debug.xcconfig */,
+				86A58DD2B81868B085EE2AA6 /* Pods-UserRegisterTable-UserRegisterTableUITests.release.xcconfig */,
+				5EF6C2DB9F0D3ED45662C920 /* Pods-UserRegisterTableTests.debug.xcconfig */,
+				AD55AB5EBCA1A873F3103EB1 /* Pods-UserRegisterTableTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E71B4025509542003F09B7 /* Build configuration list for PBXNativeTarget "UserRegisterTable" */;
 			buildPhases = (
+				EE9017A0FD11E008DC8EB6F1 /* [CP] Check Pods Manifest.lock */,
 				84E71B1225509541003F09B7 /* Sources */,
 				84E71B1325509541003F09B7 /* Frameworks */,
 				84E71B1425509541003F09B7 /* Resources */,
+				804C89E692907ACF67DC3858 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E71B4325509542003F09B7 /* Build configuration list for PBXNativeTarget "UserRegisterTableTests" */;
 			buildPhases = (
+				DF26FB34166BBEF8917BF224 /* [CP] Check Pods Manifest.lock */,
 				84E71B2825509542003F09B7 /* Sources */,
 				84E71B2925509542003F09B7 /* Frameworks */,
 				84E71B2A25509542003F09B7 /* Resources */,
@@ -185,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E71B4625509542003F09B7 /* Build configuration list for PBXNativeTarget "UserRegisterTableUITests" */;
 			buildPhases = (
+				2E8A6703338F09C9B9579B08 /* [CP] Check Pods Manifest.lock */,
 				84E71B3325509542003F09B7 /* Sources */,
 				84E71B3425509542003F09B7 /* Frameworks */,
 				84E71B3525509542003F09B7 /* Resources */,
+				8049094FC7D8F2FE2017AAA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,14 +314,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E8A6703338F09C9B9579B08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UserRegisterTable-UserRegisterTableUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8049094FC7D8F2FE2017AAA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserRegisterTable-UserRegisterTableUITests/Pods-UserRegisterTable-UserRegisterTableUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserRegisterTable-UserRegisterTableUITests/Pods-UserRegisterTable-UserRegisterTableUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserRegisterTable-UserRegisterTableUITests/Pods-UserRegisterTable-UserRegisterTableUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		804C89E692907ACF67DC3858 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserRegisterTable/Pods-UserRegisterTable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserRegisterTable/Pods-UserRegisterTable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserRegisterTable/Pods-UserRegisterTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF26FB34166BBEF8917BF224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UserRegisterTableTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9017A0FD11E008DC8EB6F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UserRegisterTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84E71B1225509541003F09B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84E71B1E25509541003F09B7 /* ViewController.swift in Sources */,
-				84E3E7642551FAB100296050 /* MeViewController.swift in Sources */,
 				8455BB2A2550A7170020E6D6 /* extensionController.swift in Sources */,
+				8455E81825534441008D4349 /* MeViewController.swift in Sources */,
 				84E3E75A2551F3C800296050 /* userListTableViewCell.swift in Sources */,
 				84E3E75F2551F4CC00296050 /* userListViewController.swift in Sources */,
 				84E71B1A25509541003F09B7 /* AppDelegate.swift in Sources */,
@@ -453,6 +602,7 @@
 		};
 		84E71B4125509542003F09B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E49CED73608674D02D28574 /* Pods-UserRegisterTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +621,7 @@
 		};
 		84E71B4225509542003F09B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0C7889E4DEF0A4C2B866B4 /* Pods-UserRegisterTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +640,7 @@
 		};
 		84E71B4425509542003F09B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EF6C2DB9F0D3ED45662C920 /* Pods-UserRegisterTableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +662,7 @@
 		};
 		84E71B4525509542003F09B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD55AB5EBCA1A873F3103EB1 /* Pods-UserRegisterTableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +684,7 @@
 		};
 		84E71B4725509542003F09B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5732DEBA3A1EA922C902DEA2 /* Pods-UserRegisterTable-UserRegisterTableUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +704,7 @@
 		};
 		84E71B4825509542003F09B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A58DD2B81868B085EE2AA6 /* Pods-UserRegisterTable-UserRegisterTableUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

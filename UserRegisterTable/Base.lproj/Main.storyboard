@@ -186,6 +186,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Me" id="HUE-cs-oJh"/>
+                    <connections>
+                        <outlet property="meAge" destination="gXS-PL-Ibj" id="Bx8-Fm-wcY"/>
+                        <outlet property="meAgeLbl" destination="DaI-yB-k8u" id="CQ9-7C-lk9"/>
+                        <outlet property="meFullName" destination="nqk-Tj-4c4" id="uvn-xL-lLl"/>
+                        <outlet property="mePicture" destination="cYt-N9-ru4" id="PX2-GP-KvK"/>
+                        <outlet property="meSalary" destination="tYG-or-uGp" id="0lL-gi-xeM"/>
+                        <outlet property="meSalaryLbl" destination="ssH-QL-oWO" id="oNM-Ml-LRw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDA-aN-TB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +202,7 @@
         <!--List-->
         <scene sceneID="Hpi-Cl-0o1">
             <objects>
-                <viewController storyboardIdentifier="MeViewController" id="fEu-pm-ITf" customClass="MeViewController" customModule="UserRegisterTable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeViewController" id="fEu-pm-ITf" customClass="userListViewController" customModule="UserRegisterTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMb-xv-VgX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,6 +472,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OSm-xf-zmV"/>
+                    <connections>
+                        <outlet property="meAge" destination="9fd-IT-4ZU" id="sOu-lf-BXJ"/>
+                        <outlet property="meAgeLbl" destination="w6X-uY-lew" id="cYM-O5-p8V"/>
+                        <outlet property="meFullName" destination="SE2-oI-5sl" id="dWd-9U-a6g"/>
+                        <outlet property="mePicture" destination="oYl-gb-P3L" id="hfa-sL-WSy"/>
+                        <outlet property="meSalary" destination="MLC-BP-vdD" id="cuy-f6-Qcc"/>
+                        <outlet property="meSalaryLbl" destination="jyh-yY-HaF" id="n4S-cM-jpd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GI0-Tu-YSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

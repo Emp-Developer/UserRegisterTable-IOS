@@ -1,0 +1,6 @@
+framework module Pods_UserRegisterTable {
+  umbrella header "Pods-UserRegisterTable-umbrella.h"
+
+  export *
+  module * { export * }
+}

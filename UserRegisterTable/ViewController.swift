@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import MBProgressHUD
 
 class ViewController: UIViewController {
 
@@ -40,6 +43,7 @@ class ViewController: UIViewController {
 
     // MARK: - Button Actions
     @IBAction func createUserBtn(_ sender: Any) {
+        request()
         goMainScreen()
     }
     
@@ -51,7 +55,26 @@ class ViewController: UIViewController {
                sd.window?.rootViewController = initialViewController
                sd.window?.makeKeyAndVisible()
            }
-       }
+    }
+    
+    // MARK: - GET Request
+    func request() {
+        let url = "http://dummy.restapiexample.com/api/v1/create"
+        let parameters = ["name": createNameTxt.text!, "salary": createSalaryTxt.text!, "age": createAgeTxt.text!]
+        
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON {
+            response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                print(json)
+            
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+    }
 
 
 }

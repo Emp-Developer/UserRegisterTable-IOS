@@ -1,0 +1,6 @@
+framework module Pods_UserRegisterTable_UserRegisterTableUITests {
+  umbrella header "Pods-UserRegisterTable-UserRegisterTableUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
