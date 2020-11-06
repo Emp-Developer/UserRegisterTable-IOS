@@ -50,6 +50,10 @@ class userListViewController: UIViewController {
             })
 
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 
 
     /*
@@ -66,7 +70,7 @@ class userListViewController: UIViewController {
 
 extension userListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return userList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -80,5 +84,17 @@ extension userListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyBoard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        
+        let user = self.userList[indexPath.row]
+        nextViewController.meFullName?.text = user.name
+        nextViewController.meSalary?.text = user.salary
+        nextViewController.meAge?.text = user.age
+        
+        performSegue(withIdentifier: "mySegue", sender: self)        
+        
+    }
     
 }

@@ -8,6 +8,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var user: [Person] = []
+    
 
     @IBOutlet weak var mePicture: UIImageView!
     @IBOutlet weak var meFullName: UILabel!

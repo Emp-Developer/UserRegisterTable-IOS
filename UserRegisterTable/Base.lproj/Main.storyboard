@@ -202,7 +202,7 @@
         <!--List-->
         <scene sceneID="Hpi-Cl-0o1">
             <objects>
-                <viewController storyboardIdentifier="MeViewController" id="fEu-pm-ITf" customClass="userListViewController" customModule="UserRegisterTable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEu-pm-ITf" customClass="userListViewController" customModule="UserRegisterTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMb-xv-VgX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +306,7 @@
                     <navigationItem key="navigationItem" title="List" id="XGB-jF-4rx"/>
                     <connections>
                         <outlet property="tableView" destination="8fe-Vx-M8j" id="rRJ-cz-yIL"/>
-                        <segue destination="nRG-Mm-Xym" kind="show" id="qLP-6Q-rtJ"/>
+                        <segue destination="nRG-Mm-Xym" kind="show" identifier="mySegue" id="qLP-6Q-rtJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFa-4G-CYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -357,7 +357,7 @@
         <!--List-->
         <scene sceneID="xfO-WX-Z3D">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sFm-gY-eaO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" id="sFm-gY-eaO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" selectedImage="person.2.fill" catalog="system" id="7zz-Pp-kzD">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -399,7 +399,7 @@
         <!--Detail View Controller-->
         <scene sceneID="tce-98-ekl">
             <objects>
-                <viewController id="nRG-Mm-Xym" customClass="DetailViewController" customModule="UserRegisterTable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="nRG-Mm-Xym" customClass="DetailViewController" customModule="UserRegisterTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XKv-ae-NMm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
