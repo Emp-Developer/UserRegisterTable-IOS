@@ -52,7 +52,12 @@ class userListViewController: UIViewController {
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if (segue.identifier == "mySegue") {
+            let vc = segue.destination as? DetailViewController
+            let u = sender as! Person
+            vc?.userdetail = u
+        }
+
     }
 
 
@@ -85,16 +90,8 @@ extension userListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextViewController = storyBoard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-        
         let user = self.userList[indexPath.row]
-        nextViewController.meFullName?.text = user.name
-        nextViewController.meSalary?.text = user.salary
-        nextViewController.meAge?.text = user.age
-        
-        performSegue(withIdentifier: "mySegue", sender: self)        
-        
+        performSegue(withIdentifier: "mySegue", sender: user)
     }
     
 }

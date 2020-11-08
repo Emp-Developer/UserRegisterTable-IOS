@@ -9,8 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var user: [Person] = []
-    
+    public var userdetail: Person?
 
     @IBOutlet weak var mePicture: UIImageView!
     @IBOutlet weak var meFullName: UILabel!
@@ -22,6 +21,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(userdetail?.name)
+        self.meFullName?.text = userdetail?.name
+        self.meSalary?.text = userdetail?.salary
+        self.meAge?.text = userdetail?.age
     }
     
 

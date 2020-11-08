@@ -11,6 +11,8 @@ import SwiftyJSON
 import MBProgressHUD
 
 class ViewController: UIViewController {
+    var validation = Validation()
+    
 
     @IBOutlet weak var appTitleLbl: UILabel!
     @IBOutlet weak var createNameTxt: UITextField!
@@ -39,12 +41,41 @@ class ViewController: UIViewController {
         self.createAgeTxt.layer.cornerRadius = 5.0
         
         self.createBtn.layer.cornerRadius = 5.0
+        
+        
     }
 
     // MARK: - Button Actions
     @IBAction func createUserBtn(_ sender: Any) {
-        request()
-        goMainScreen()
+        guard let name = createNameTxt.text, let salary = createSalaryTxt.text, let age = createAgeTxt.text else {
+            return
+        }
+        
+        let isValidateName = self.validation.validateName(name: name)
+              if (isValidateName == false) {
+                 print("Incorrect Name")
+                 return
+              }
+        let isValidateSalary = self.validation.validaSalary(Salary: salary)
+            if (isValidateSalary == false) {
+                print("Invalid Salary!")
+                return
+            }
+        let isValidateAge = self.validation.validaAge(Age: age)
+              if (isValidateName == true || isValidateSalary == true || isValidateAge == true) {
+                request()
+                showIndicator(withTitle: "Loading...", and: "User List")
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                    goMainScreen()
+                }
+                
+              }
+        
+    }
+    //SaveInfo with UserDefaults
+    func saveInfo() {
+        
     }
     
     // MARK: - Go to TabBar
@@ -62,13 +93,13 @@ class ViewController: UIViewController {
         let url = "http://dummy.restapiexample.com/api/v1/create"
         let parameters = ["name": createNameTxt.text!, "salary": createSalaryTxt.text!, "age": createAgeTxt.text!]
         
-        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON {
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { [self]
             response in
             switch response.result {
             case .success(let data):
                 let json = JSON(data)
                 print(json)
-            
+            saveInfo()
             case .failure(let error):
                 print(error)
             }
@@ -79,3 +110,16 @@ class ViewController: UIViewController {
 
 }
 
+
+extension UIViewController {
+   func showIndicator(withTitle title: String, and Description:String) {
+      let Indicator = MBProgressHUD.showAdded(to: self.view, animated: true)
+      Indicator.label.text = title
+      Indicator.isUserInteractionEnabled = false
+      Indicator.detailsLabel.text = Description
+      Indicator.show(animated: true)
+   }
+   func hideIndicator() {
+      MBProgressHUD.hide(for: self.view, animated: true)
+   }
+}

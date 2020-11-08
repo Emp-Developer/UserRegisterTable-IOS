@@ -8,7 +8,7 @@
 import UIKit
 
 class MeViewController: UIViewController {
-
+        
     @IBOutlet weak var mePicture: UIImageView!
     @IBOutlet weak var meFullName: UILabel!
     @IBOutlet weak var meSalaryLbl: UILabel!
@@ -17,7 +17,8 @@ class MeViewController: UIViewController {
     @IBOutlet weak var meAge: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+    
         // Do any additional setup after loading the view.
     }
     
